@@ -1,11 +1,12 @@
 /* ════════════════════════════════════════
    IMAGERY HOMES & DECOR — STYLESHEET
-   Mobile-first, fully responsive
+   Colour update: Gold → Blue (#1A6BCC / #4D94E8)
+   Everything else unchanged.
 ════════════════════════════════════════ */
 
 :root {
-  --gold: #C9A84C;
-  --gold-light: #E5C97E;
+  --gold: #1A6BCC;          /* was #C9A84C — main blue */
+  --gold-light: #4D94E8;    /* was #E5C97E — lighter blue */
   --dark: #1A1A1A;
   --dark-2: #111111;
   --cream: #F5F0E8;
@@ -27,7 +28,7 @@ body {
 /* ── NAVBAR ── */
 .navbar {
   background: rgba(17, 17, 17, 0.96);
-  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  border-bottom: 1px solid rgba(26, 107, 204, 0.2);
   padding: 1rem 0;
   position: fixed;
   width: 100%;
@@ -84,20 +85,21 @@ body {
 }
 .nav-contact-btn:hover {
   background: var(--gold);
-  color: #111 !important;
+  color: #fff !important;
 }
 .navbar-toggler {
   border: 1px solid var(--gold);
   padding: 0.3rem 0.6rem;
 }
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23C9A84C' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231A6BCC' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 /* Mobile nav menu styling */
 @media (max-width: 991px) {
   .navbar-collapse {
     background: rgba(17,17,17,0.98);
-    border-top: 1px solid rgba(201,168,76,0.15);
+    border-top: 1px solid rgba(26,107,204,0.15);
     padding: 1rem 0.5rem;
     margin-top: 0.5rem;
   }
@@ -113,7 +115,7 @@ body {
 /* ── HERO ── */
 #home {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0e0e0e 0%, #1a1510 100%);
+  background: linear-gradient(135deg, #0e0e0e 0%, #0a1220 100%);
   position: relative;
   display: flex;
   align-items: center;
@@ -162,7 +164,7 @@ body {
 }
 .btn-gold {
   background: var(--gold);
-  color: #111;
+  color: #fff;
   border: none;
   border-radius: 0;
   padding: 0.85rem 2.4rem;
@@ -175,7 +177,7 @@ body {
   display: inline-block;
   white-space: nowrap;
 }
-.btn-gold:hover { background: var(--gold-light); color: #111; transform: translateY(-2px); }
+.btn-gold:hover { background: var(--gold-light); color: #fff; transform: translateY(-2px); }
 .btn-outline-gold {
   background: transparent;
   color: var(--gold);
@@ -191,7 +193,7 @@ body {
   display: inline-block;
   white-space: nowrap;
 }
-.btn-outline-gold:hover { background: var(--gold); color: #111; }
+.btn-outline-gold:hover { background: var(--gold); color: #fff; }
 
 /* Hero badge */
 .hero-badge {
@@ -213,7 +215,7 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.72rem;
   font-weight: 700;
-  color: #111;
+  color: #fff;
   letter-spacing: 0.5px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -247,7 +249,7 @@ body {
   gap: 2rem;
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(201,168,76,0.2);
+  border-top: 1px solid rgba(26, 107, 204, 0.2);
   flex-wrap: wrap;
 }
 .stat-num {
@@ -291,23 +293,23 @@ section { padding: 5rem 0; }
 /* ── SERVICES STRIP ── */
 .services-strip {
   background: #111;
-  border-top: 1px solid rgba(201,168,76,0.2);
-  border-bottom: 1px solid rgba(201,168,76,0.2);
+  border-top: 1px solid rgba(26, 107, 204, 0.2);
+  border-bottom: 1px solid rgba(26, 107, 204, 0.2);
 }
 .services-row { display: flex; flex-wrap: wrap; }
 .service-item {
   flex: 1 1 50%;
   text-align: center;
   padding: 2rem 1rem;
-  border-right: 1px solid rgba(201,168,76,0.15);
-  border-bottom: 1px solid rgba(201,168,76,0.15);
+  border-right: 1px solid rgba(26, 107, 204, 0.15);
+  border-bottom: 1px solid rgba(26, 107, 204, 0.15);
   transition: background 0.3s;
   min-width: 140px;
 }
 .service-item:nth-child(2n) { border-right: none; }
 .service-item:last-child,
 .service-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
-.service-item:hover { background: rgba(201,168,76,0.05); }
+.service-item:hover { background: rgba(26, 107, 204, 0.05); }
 .service-item i {
   font-size: 1.8rem;
   color: var(--gold);
@@ -347,7 +349,7 @@ section { padding: 5rem 0; }
 }
 .about-gold-box {
   background: var(--gold);
-  color: #111;
+  color: #fff;
   padding: 1.5rem 2rem;
   margin-bottom: 1.5rem;
 }
@@ -364,7 +366,7 @@ section { padding: 5rem 0; }
 #why { background: var(--dark-2); }
 .why-card {
   background: #1a1a1a;
-  border: 1px solid rgba(201,168,76,0.15);
+  border: 1px solid rgba(26, 107, 204, 0.15);
   padding: 2rem 1.5rem;
   text-align: center;
   transition: all 0.4s;
@@ -373,7 +375,7 @@ section { padding: 5rem 0; }
 .why-card:hover {
   border-color: var(--gold);
   transform: translateY(-6px);
-  background: #1e1b14;
+  background: #111620;
 }
 .why-icon {
   width: 54px;
@@ -402,7 +404,7 @@ section { padding: 5rem 0; }
 .gallery-filter { margin-bottom: 2rem; }
 .filter-btn {
   background: transparent;
-  border: 1px solid rgba(201,168,76,0.3);
+  border: 1px solid rgba(26, 107, 204, 0.3);
   color: #888;
   padding: 0.45rem 1.1rem;
   font-size: 0.7rem;
@@ -415,7 +417,7 @@ section { padding: 5rem 0; }
 .filter-btn.active, .filter-btn:hover {
   background: var(--gold);
   border-color: var(--gold);
-  color: #111;
+  color: #fff;
 }
 .gallery-grid {
   display: grid;
@@ -440,7 +442,7 @@ section { padding: 5rem 0; }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(201,168,76,0.15);
+  background: rgba(26, 107, 204, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,9 +454,9 @@ section { padding: 5rem 0; }
 
 /* ── WHATSAPP CTA BANNER ── */
 .wa-cta-banner {
-  background: linear-gradient(90deg, #1a1510, #111, #1a1510);
-  border-top: 1px solid rgba(201,168,76,0.2);
-  border-bottom: 1px solid rgba(201,168,76,0.2);
+  background: linear-gradient(90deg, #0a1220, #111, #0a1220);
+  border-top: 1px solid rgba(26, 107, 204, 0.2);
+  border-bottom: 1px solid rgba(26, 107, 204, 0.2);
   padding: 4rem 0;
 }
 .wa-cta-desc {
@@ -469,7 +471,7 @@ section { padding: 5rem 0; }
 #testimonials { background: var(--dark); }
 .testimonial-card {
   background: #1a1a1a;
-  border: 1px solid rgba(201,168,76,0.15);
+  border: 1px solid rgba(26, 107, 204, 0.15);
   padding: 2rem 1.8rem;
   position: relative;
   height: 100%;
@@ -509,7 +511,7 @@ section { padding: 5rem 0; }
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #111;
+  color: #fff;
   flex-shrink: 0;
 }
 .testimonial-author h6 { color: #fff; font-size: 0.83rem; font-weight: 600; margin: 0; }
@@ -579,7 +581,7 @@ section { padding: 5rem 0; }
 .form-control {
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(201,168,76,0.3);
+  border-bottom: 1px solid rgba(26, 107, 204, 0.3);
   border-radius: 0;
   color: #fff;
   padding: 0.7rem 0;
@@ -598,7 +600,7 @@ section { padding: 5rem 0; }
 /* ── FOOTER ── */
 footer {
   background: #0a0a0a;
-  border-top: 1px solid rgba(201,168,76,0.2);
+  border-top: 1px solid rgba(26, 107, 204, 0.2);
   padding: 1.8rem 0;
 }
 .footer-inner {
@@ -663,7 +665,7 @@ footer {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
-  border: 1px solid rgba(201,168,76,0.3);
+  border: 1px solid rgba(26, 107, 204, 0.3);
 }
 .wa-float:hover .wa-tooltip { opacity: 1; }
 @keyframes waPulse {
@@ -681,7 +683,7 @@ footer {
   width: 40px;
   height: 40px;
   background: var(--gold);
-  color: #111;
+  color: #fff;
   border: none;
   display: flex;
   align-items: center;
@@ -703,7 +705,6 @@ footer {
 @media (max-width: 991px) {
   section { padding: 4rem 0; }
 
-  /* Hero: text on top, images below */
   #home { padding-top: 75px; }
   .hero-images {
     height: 55vw;
@@ -712,24 +713,19 @@ footer {
   }
   .hero-desc { max-width: 100%; }
 
-  /* Services: 2x2 grid */
   .service-item { flex: 1 1 50%; }
   .service-item:nth-child(2n) { border-right: none; }
   .service-item:nth-child(3),
   .service-item:nth-child(4) { border-bottom: none; }
 
-  /* About image: simpler layout */
   .about-img-wrap { height: 340px; }
   .about-img-accent { display: none; }
 
-  /* Why cards: 2x2 */
   .why-card { padding: 1.8rem 1.2rem; }
 
-  /* Testimonials: full width stacked */
   #testimonials .col-12.col-md-4 { width: 100%; }
   .testimonial-card { padding: 1.8rem 1.5rem; margin-bottom: 0; }
 
-  /* Contact: info above form */
   .contact-form-wrap { padding: 2rem 1.5rem; margin-top: 0; }
 }
 
@@ -737,10 +733,8 @@ footer {
 @media (max-width: 767px) {
   section { padding: 3.5rem 0; }
 
-  /* Navbar brand: smaller on mobile */
   .navbar-brand { font-size: 1rem; letter-spacing: 1px; }
 
-  /* Hero */
   .hero-eyebrow { font-size: 0.62rem; letter-spacing: 3px; }
   .hero-title { font-size: clamp(2rem, 9vw, 3rem); }
   .hero-sub { font-size: 0.68rem; letter-spacing: 3px; }
@@ -750,12 +744,10 @@ footer {
   .hero-badge-text { font-size: 0.6rem; }
   .hero-images { height: 52vw; min-height: 240px; }
 
-  /* Hero stats: wrap into 3 columns */
   .hero-stats { gap: 1rem; margin-top: 1.8rem; padding-top: 1.5rem; }
   .stat-num { font-size: 1.6rem; }
   .stat-label { font-size: 0.58rem; }
 
-  /* Hero buttons: stack */
   .hero-btns { flex-direction: column; align-items: flex-start; }
   .btn-gold, .btn-outline-gold {
     width: 100%;
@@ -764,41 +756,33 @@ footer {
     padding: 0.8rem 1.5rem;
   }
 
-  /* Section title */
   .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
 
-  /* Gallery: 2 columns on mobile */
   .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .gallery-item.tall { grid-row: span 1; aspect-ratio: 4/3; }
   .filter-btn { padding: 0.4rem 0.8rem; font-size: 0.65rem; letter-spacing: 1px; margin: 0 0.15rem 0.4rem; }
 
-  /* WA CTA banner */
   .wa-cta-banner { padding: 3rem 0; }
   .wa-cta-desc { font-size: 0.82rem; }
 
-  /* Testimonials */
   .testimonial-card { padding: 1.5rem 1.2rem; }
   .testimonial-card::before { font-size: 4rem; }
   .testimonial-text { font-size: 0.82rem; }
 
-  /* Contact info */
   .contact-info-item { gap: 0.8rem; margin-bottom: 1.3rem; }
   .contact-icon { width: 40px; height: 40px; font-size: 1rem; }
   .contact-info-item h6 { font-size: 0.65rem; }
   .contact-info-item p { font-size: 0.8rem; }
 
-  /* Contact form */
   .contact-form-wrap { padding: 1.5rem 1rem; }
   .form-label { font-size: 0.65rem; }
   .form-control { font-size: 0.84rem; padding: 0.6rem 0; }
 
-  /* Footer */
   .footer-inner { flex-direction: column; text-align: center; gap: 0.8rem; }
   .footer-brand { font-size: 0.95rem; }
   .social-links { display: flex; justify-content: center; gap: 0.2rem; }
   .social-links a { margin-left: 0.8rem; font-size: 1.2rem; }
 
-  /* WhatsApp float */
   .wa-btn { width: 52px; height: 52px; }
   .wa-btn i { font-size: 1.5rem; }
   .wa-float { bottom: 1.2rem; right: 1.2rem; }
@@ -807,29 +791,22 @@ footer {
 
 /* ── SMALL MOBILE: max 480px ── */
 @media (max-width: 480px) {
-  /* Gallery: single column for very small screens */
   .gallery-grid { grid-template-columns: 1fr; }
 
-  /* Why cards: full width */
   #why .col-6 { width: 100%; }
   .why-card { padding: 1.5rem 1rem; }
 
-  /* Services: full width each */
-  .service-item { flex: 1 1 100%; border-right: none; border-bottom: 1px solid rgba(201,168,76,0.15); }
+  .service-item { flex: 1 1 100%; border-right: none; border-bottom: 1px solid rgba(26,107,204,0.15); }
   .service-item:last-child { border-bottom: none; }
 
-  /* About */
   .about-img-wrap { height: 260px; }
   .about-gold-box { padding: 1.2rem 1.5rem; }
   .about-gold-box p { font-size: 1rem; }
 
-  /* Contact form send button */
   .btn-gold.w-100 { font-size: 0.72rem; padding: 0.85rem 0.8rem; letter-spacing: 1.5px; }
 
-  /* Stat items row on very small */
   .hero-stats { gap: 0.8rem; }
   .stat-item { min-width: 70px; }
 
-  /* Tooltip hide on mobile (touch has no hover) */
   .wa-tooltip { display: none; }
 }
