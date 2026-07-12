@@ -22,8 +22,16 @@
   <!-- ── NAVBAR ── -->
   <nav class="navbar navbar-expand-lg" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#home">
-        IMAGERY HOMES <span style="color:var(--gold-light)">·</span> <span style="font-size:0.75rem; letter-spacing:2px; color:#aaa; font-family:'Montserrat',sans-serif; font-weight:300;">DECOR</span>
+      <a class="navbar-brand" href="#home" style="display:flex; align-items:center; gap:10px; padding:0;">
+        <!-- Logo image — path matches your Image folder -->
+        <img src="./Image/Logo.jpeg"
+             alt="Imagery Homes & Decor Logo"
+             style="height:42px; width:auto; border-radius:6px; object-fit:contain;"/>
+        <!-- Brand text next to logo -->
+        <span style="display:flex; flex-direction:column; line-height:1.1;">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--gold); letter-spacing:1.5px; text-transform:uppercase;">Imagery Homes</span>
+          <span style="font-family:'Montserrat',sans-serif; font-size:0.65rem; font-weight:300; color:#aaa; letter-spacing:2px; text-transform:uppercase;">Decor</span>
+        </span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
